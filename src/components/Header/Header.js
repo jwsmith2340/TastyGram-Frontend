@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
+import './Header.scss'
 
 const Header = (props) => {
     return (
-        <header>
             <nav>
-                <Link to="/">
-                    <>HOME</>
+                <Link to="/" className="link">
+                    <h4>Home</h4>
                 </Link>
                 <br />
-                <Link to="/newfood">
-                    <>POST FOOD</>
+                <Link to="/newfood" className="link">
+                    <h4>New Post</h4>
                 </Link>
             </nav>
-        </header>
     )
 };
 
