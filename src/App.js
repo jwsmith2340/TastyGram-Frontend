@@ -4,7 +4,6 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 // IMPORT PAGES
-import Welcome from "./pages/Welcome";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 import Show from "./pages/Show";
@@ -19,29 +18,22 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
 
       <Switch>
-        <Route exact path="/">
-          <Welcome />
-        </Route>
-        <Route path="/signup">
-          <Header />
-          <SignUp />
-        </Route>
-        <Route path="/home">
-          <Header />
+      <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/signup">
+          <SignUp />
+        </Route>
         <Route exact path="/food/:id">
-          <Header />
           <Show />
         </Route>
         <Route path="/food/edit/:id">
-          <Header />
           <Edit />
         </Route>
         <Route path="/newfood">
-          <Header />
           <New />
         </Route>
       </Switch>
