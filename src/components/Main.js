@@ -23,6 +23,20 @@ const Main = (props) => {
     setFood(data);
   };
 
+  // CREATE FOOD
+  const createFood = async (eachFood) => {
+    // make post request to create food
+    await fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/JSON",
+      },
+      body: JSON.stringify(eachFood),
+    });
+    // update list of food
+    getFood();
+  };
+
   // UPDATE FOOD
   const updateFoods = async (eachFood, id) => {
     //make PUT request to update people
@@ -43,7 +57,7 @@ const Main = (props) => {
     <main>
       <Switch>
         <Route exact path="/">
-          <Home foods={ foods }/>
+          <Home foods={ foods } createFood={ createFood }/>
         </Route>
         <Route path="/signup">
           <SignUp />
@@ -55,7 +69,7 @@ const Main = (props) => {
         <Route path="/food/edit/:id" render={(rf) => 
           (<Edit 
             foods={foods}
-            updateFoods={updateFoods}
+            updateFoods={ updateFoods }
             {...rf}/>)} />
         <Route path="/newfood">
           <New />
