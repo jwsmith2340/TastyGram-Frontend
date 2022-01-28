@@ -1,5 +1,6 @@
 import './Footer.scss'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { BiRun } from 'react-icons/bi'
 
 
 const Footer = (props) => {
@@ -8,6 +9,10 @@ const Footer = (props) => {
         <footer>
 
             <div className="footer-box">
+                <div className="dt-about-box">
+                    <h4><BiRun /></h4>
+                </div>
+
                 <div className="mob-name-box">
                     <a href="https://www.linkedin.com/in/jaredbradley95/" target="_blank"><FaLinkedin />Jared Bradley</a>
                     <a href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><FaLinkedin />James Smith</a>
