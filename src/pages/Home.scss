@@ -17,19 +17,33 @@ body {
         height: 100%;
         width: 100%; 
         border-radius: 10%;
+        transition: .3s ease-in-out;
 
         .image-link {
             height: 80%;
             width: 100%;
-            border-radius: 10%;
+            
 
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                border-radius: 10%;
+                border-top-left-radius: 10%;
+                border-top-right-radius: 10%;
+            }
+        }
+
+        .mob-title {
+            margin: 10px 10% 0;
+            text-align: center;
+            h3 {
+                
             }
         }
     }
-    
+
+    .home-inner-box:hover {
+        background-color: rgb(207, 35, 35);
+        color: white
+    }
 }

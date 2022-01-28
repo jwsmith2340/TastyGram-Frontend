@@ -9,6 +9,7 @@ const Footer = (props) => {
         <footer>
 
             <div className="footer-box">
+
                 <div className="dt-about-box">
                     <h4><BiRun /></h4>
                 </div>
@@ -23,6 +24,7 @@ const Footer = (props) => {
                     <a href="https://github.com/Jab7red/Project-3-frontend" target="_blank"><FaGithub /> Frontend </a>
                     <a href="https://github.com/Micahlou/RecipeApp-Backend" target="_blank"><FaGithub /> Backend </a>
                 </div>
+                
             </div>
 
         </footer>
