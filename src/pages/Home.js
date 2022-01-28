@@ -8,8 +8,12 @@ const Home = (props) => {
         return props.foods.map((eachFood) => (
             <div className="home-box">
                 <div key={eachFood._id} className="home-inner-box">
-                    <Link to={`/food/${eachFood._id}`}><img src={eachFood.image} alt={eachFood.title}/></Link>
+                    <div className="image-link">
+                        <Link to={`/food/${eachFood._id}`}><img src={eachFood.image} alt={eachFood.title} /></Link>
+                    </div>
                     <h3>{eachFood.title}</h3>
+                </div>
+                <div className="footer-space-box">
                 </div>
             </div>
         ));
@@ -20,7 +24,7 @@ const Home = (props) => {
     }
     return (
         <>
-        {props.foods ? loaded() : loading()} 
+            {props.foods ? loaded() : loading()}
         </>
     )
 };
