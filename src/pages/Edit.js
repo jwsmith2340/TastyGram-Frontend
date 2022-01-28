@@ -23,12 +23,19 @@ const Edit = (props) => {
         // REDIRECT BACK TO HOME
         props.history.push(`/food/${eachFood._id}`);
     };
+
+    // REMOVE FOOD 
+    const removeFood = () => {
+        props.deleteFoods(eachFood._id);
+        props.history.push("/");
+    }
     return (
         <div className="show-box">
             <div className="inner-show-box">
                 <h1>{eachFood.title}</h1>
                 <img src={eachFood.image} alt={eachFood.title} />
                 <h2>{eachFood.description}</h2>
+                <button onClick={removeFood}>REMOVE</button>
                 <form onSubmit={handleSubmit}>
                     <input type="text" value={editForm.title} name='title' placeholder='title' onChange={handleChange}/>
                     <input type="text" value={editForm.image} name='image' placeholder='image URL' onChange={handleChange}/>
