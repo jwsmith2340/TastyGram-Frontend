@@ -1,19 +1,24 @@
 import './Footer.scss'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 
 const Footer = (props) => {
     return (
 
         <footer>
+
             <div className="footer-box">
-            <div className="mob-name-box">
-                <h4><span>&copy;</span>Jared Bradley</h4>
-                <h4><span>&copy;</span>James Smith</h4>
-                <h4><span>&copy;</span>Micah Stewart</h4>
+                <div className="mob-name-box">
+                    <a href="https://www.linkedin.com/in/jaredbradley95/" target="_blank"><FaLinkedin />Jared Bradley</a>
+                    <a href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><FaLinkedin />James Smith</a>
+                    <a href="https://www.linkedin.com/in/micah-stewart-00a213228/" target="_blank"><FaLinkedin />Micah Stewart</a>
+                </div>
+
+                <div className="mob-repo-box">
+                    <a href="https://github.com/Jab7red/Project-3-frontend" target="_blank"><FaGithub /> Frontend </a>
+                    <a href="https://github.com/Micahlou/RecipeApp-Backend" target="_blank"><FaGithub /> Backend </a>
+                </div>
             </div>
-            <div className="mob-repo-box">
-                <a href="https://github.com/Jab7red/Project-3-frontend">Frontend Git Repo</a>    
-            </div>
-            </div>  
 
         </footer>
     )
