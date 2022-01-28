@@ -51,6 +51,16 @@ const Main = (props) => {
     getFood();
   };
 
+  // DELETE FOOD
+  const deleteFoods = async (id) => {
+    // make delete request to delete foodById
+    await fetch(URL +id, {
+      method: "DELETE",
+    });
+    // update list of food
+    getFood();
+  }
+
   useEffect(() => getFood(), []);
 
   return (
@@ -70,6 +80,7 @@ const Main = (props) => {
           (<Edit 
             foods={foods}
             updateFoods={ updateFoods }
+            deleteFoods={ deleteFoods }
             {...rf}/>)} />
         <Route path="/newfood">
           <New />
