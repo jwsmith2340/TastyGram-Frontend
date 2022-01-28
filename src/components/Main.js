@@ -34,9 +34,10 @@ const Main = (props) => {
         <Route path="/signup">
           <SignUp />
         </Route>
-        <Route exact path="/food/:id">
-          <Show />
-        </Route>
+        <Route exact path="/food/:id" render={(rf) => 
+          (<Show 
+            foods={foods}
+            {...rf} />)} />
         <Route path="/food/edit/:id">
           <Edit />
         </Route>
