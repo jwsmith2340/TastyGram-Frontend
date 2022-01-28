@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+}
+footer {
+    background-color: rgb(207, 35, 35);  
+    margin-top: 75vh;
+    position: fixed;
+    max-width: 1200px;
+    width: 100%;
+    bottom: 0;
+
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+
+        .mob-name-box {        
+            h4 {
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -30,7 +30,6 @@ nav {
             text-decoration: none;
             margin: 0 3.5vw;
             font-size: 20px;
-
         }
     }
     
@@ -41,6 +40,7 @@ nav {
     }            
 }
 
+//TABLET STYLING
 @media (min-width: 650px) {
     nav {
         .mob-logo {
@@ -49,6 +49,7 @@ nav {
     }
 }
 
+//DESKTOP STYLING
 @media (min-width: 1000px) {  
     nav {
         .dt-logo {
