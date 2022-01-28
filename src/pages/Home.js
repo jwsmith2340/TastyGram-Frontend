@@ -11,7 +11,9 @@ const Home = (props) => {
                     <div className="image-link">
                         <Link to={`/food/${eachFood._id}`}><img src={eachFood.image} alt={eachFood.title} /></Link>
                     </div>
-                    <h3>{eachFood.title}</h3>
+                    <div className="mob-title">
+                        <h3>{eachFood.title}</h3>
+                    </div>
                 </div>
                 <div className="footer-space-box">
                 </div>
