@@ -1,6 +1,11 @@
 //MOBILE STYLING
 .dt-logo {display: none;}
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: rgb(207, 35, 35);
     display: flex;
@@ -32,20 +37,28 @@ nav {
     .mob-logo {
         color: white;
         font-family: 'Lobster', cursive;
+        font-size: 40px;
     }            
 }
 
 @media (min-width: 650px) {
-    .mob-logo {
-        color: yellow;
+    nav {
+        .mob-logo {
+           font-size: 50px;
+        }
     }
 }
 
-
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-font-family: 'Lobster', cursive;
-*/ 
+@media (min-width: 1000px) {  
+    nav {
+        .dt-logo {
+            display: block;
+            color: white; 
+            font-size: 50px;
+            font-family: 'Lobster', cursive;
+        }
+        .mob-logo {
+           display: none;
+        }
+    }
+}
