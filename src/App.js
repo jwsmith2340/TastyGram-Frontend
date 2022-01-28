@@ -13,33 +13,39 @@ import New from "./pages/New";
 
 
 function App() {
-// INPUT BACKEND HEROKU URL WHEN AVAILABLE
-// const URL = "";
+  // INPUT BACKEND HEROKU URL WHEN AVAILABLE
+  // const URL = "";
 
 
   return (
     <div className="App">
-      <Header />
+
       <Switch>
         <Route exact path="/">
           <Welcome />
         </Route>
         <Route path="/signup">
+          <Header />
           <SignUp />
         </Route>
         <Route path="/home">
+          <Header />
           <Home />
         </Route>
         <Route exact path="/food/:id">
+          <Header />
           <Show />
         </Route>
         <Route path="/food/edit/:id">
+          <Header />
           <Edit />
         </Route>
         <Route path="/newfood">
+          <Header />
           <New />
         </Route>
       </Switch>
+      
       <Footer />
     </div>
   );
