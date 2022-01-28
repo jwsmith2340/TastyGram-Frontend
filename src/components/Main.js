@@ -21,7 +21,21 @@ const Main = (props) => {
     const response = await fetch(URL);
     const data = await response.json();
     setFood(data);
-  }
+  };
+
+  // UPDATE FOOD
+  const updateFoods = async (eachFood, id) => {
+    //make PUT request to update people
+    await fetch(URL + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "Application/JSON",
+      },
+      body: JSON.stringify(eachFood),
+    });
+    // update list of food
+    getFood();
+  };
 
   useEffect(() => getFood(), []);
 
@@ -38,9 +52,11 @@ const Main = (props) => {
           (<Show 
             foods={foods}
             {...rf} />)} />
-        <Route path="/food/edit/:id">
-          <Edit />
-        </Route>
+        <Route path="/food/edit/:id" render={(rf) => 
+          (<Edit 
+            foods={foods}
+            updateFoods={updateFoods}
+            {...rf}/>)} />
         <Route path="/newfood">
           <New />
         </Route>
