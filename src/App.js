@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Show from "./pages/Show";
 import Edit from "./pages/Edit";
 import New from "./pages/New";
+import './App.scss'
 
 
 function App() {
