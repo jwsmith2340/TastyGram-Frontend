@@ -10,6 +10,11 @@ nav {
 
     .mob-link-boxes {
         width: 30vw;
+        display: flex;
+    }
+
+    .mob-link-box-right {
+        justify-content: flex-end;
     }
 
     .link {
@@ -24,8 +29,23 @@ nav {
         }
     }
     
-    h2 {
+    .mob-logo {
         color: white;
+        font-family: 'Lobster', cursive;
     }            
 }
 
+@media (min-width: 650px) {
+    .mob-logo {
+        color: yellow;
+    }
+}
+
+
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+font-family: 'Lobster', cursive;
+*/ 
