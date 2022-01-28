@@ -13,6 +13,10 @@ import New from "./pages/New";
 
 
 function App() {
+// INPUT BACKEND HEROKU URL WHEN AVAILABLE
+// const URL = "";
+
+
   return (
     <div className="App">
       <Header />
@@ -26,7 +30,7 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
-        <Route path="/food/:id">
+        <Route exact path="/food/:id">
           <Show />
         </Route>
         <Route path="/food/edit/:id">
