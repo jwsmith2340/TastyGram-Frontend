@@ -1,17 +1,31 @@
+//MOBILE STYLING
+.dt-logo {display: none;}
+
 nav {
-    background-color: yellow;
+    background-color: rgb(207, 35, 35);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
+    height: 8vh;
+
+    .mob-link-boxes {
+        width: 30vw;
+    }
 
     .link {
         text-decoration: none;
 
-           h4 {
-            color: red;
+        h4 {
+            color: rgb(219, 219, 219);
             text-decoration: none;
+            margin: 0 3.5vw;
+            font-size: 20px;
+
         }
     }
+    
+    h2 {
+        color: white;
+    }            
 }
 
