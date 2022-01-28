@@ -1,5 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Header = (props) => {
-    return <h1>Header</h1>
+    return (
+        <header>
+            <nav>
+                <Link to="/home">
+                    <>HOME</>
+                </Link>
+                <br />
+                <Link to="/newfood">
+                    <>POST FOOD</>
+                </Link>
+            </nav>
+        </header>
+    )
 };
 
 export default Header;
