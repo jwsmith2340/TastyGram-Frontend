@@ -17,9 +17,15 @@ const Show = (props) => {
         return (
             <div className="show-box">
                 <div className="inner-show-box">
+                    <div className="recipe-title-box">
                     <h1>{eachFood.title}</h1>
+                    </div>
+                    <div className="image-box">
                     <img src={eachFood.image} alt={eachFood.title} />
+                    </div>
+                    <div className="description-box">
                     <h2>{eachFood.description}</h2>
+                    </div>
                     <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link>
                 </div>
             </div>
