@@ -9,11 +9,11 @@ const Home = (props) => {
             <div className="home-box">
                 <div key={eachFood._id} className="home-inner-box">
                     <div className="image-link">
-                        <Link to={`/food/${eachFood._id}`}><img src={eachFood.image} alt={eachFood.title} /></Link>
+                        <Link to={`/food/${eachFood._id}`} className="link-element"><img src={eachFood.image} alt={eachFood.title} /></Link>
                     </div>
-                    <div className="mob-title">
+                    <Link to={`/food/${eachFood._id}`} className="link-element"><div className="mob-title">
                         <h3>{eachFood.title}</h3>
-                    </div>
+                    </div></Link>
                 </div>
                 <div className="footer-space-box">
                 </div>
