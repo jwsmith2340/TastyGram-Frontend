@@ -3,6 +3,12 @@ body {
     min-height: 120vh;
 }
 
+.link-element {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
 .home-box {
     width: 80vw;
     margin: 5vh auto;
@@ -44,7 +50,10 @@ body {
 
     .home-inner-box:hover {
         background-color: rgb(207, 35, 35);
-        color: white
+        color: white;
+        .link-element {
+            color: white;
+        }
     }
 }
 
