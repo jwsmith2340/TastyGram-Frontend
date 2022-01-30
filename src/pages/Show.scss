@@ -19,14 +19,13 @@
 
         .image-box {
             width: 85vw;
-            background-color: yellow;
             max-height: 40vh;
 
             img {
                 height: 40vh;
                 object-fit: cover;
                 width: 100%;
-                
+                border-radius: 5%;
             }
         }
 
