@@ -30,7 +30,7 @@ const Edit = (props) => {
         props.history.push("/");
     }
     return (
-        <div>
+        <div className="edit-box">
             <div className="title-box"><h1>Edit Recipe</h1></div>
             <div className="edit-page-title-box">
                 <h1>{eachFood.title}</h1>
