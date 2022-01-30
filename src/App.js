@@ -7,10 +7,6 @@ import './App.scss'
 
 
 function App() {
-  // INPUT BACKEND HEROKU URL WHEN AVAILABLE
-  // const URL = "";
-  //comment here for funnzies
-
 
   return (
     <div className="App">
