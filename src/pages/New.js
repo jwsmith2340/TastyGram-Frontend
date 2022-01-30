@@ -1,9 +1,10 @@
 // IMPORT STATE FROM REACT
 import { useState } from "react";
+import './New.scss'
 
 const New = (props) => {
     // STATE TO HOLD FORMDATA
-    const [ newForm, setNewForm ] = useState({
+    const [newForm, setNewForm] = useState({
         title: "",
         image: "",
         description: "",
@@ -11,7 +12,7 @@ const New = (props) => {
 
     // HANDLECHANGE FUNCTION FOR FORM
     const handleChange = (event) => {
-        setNewForm({...newForm, [event.target.name]: event.target.value});
+        setNewForm({ ...newForm, [event.target.name]: event.target.value });
     };
 
     //HANDLESUBMIT FUNCTION FOR FORM
@@ -25,14 +26,23 @@ const New = (props) => {
         });
     };
     return (
-        <section>
+        <div>
+            <div className="title-box">
+                <h1>New Recipe Form</h1>
+            </div>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={newForm.title} name="title" placeholder="title" onChange={handleChange}/>
-                <input type="text" value={newForm.image} name="image" placeholder="image URL" onChange={handleChange}/>
-                <input type="text" value={newForm.description} name="description" placeholder="description" onChange={handleChange}/>
-                <input type="submit" value="POST FOOD" />
+                <div className="input-boxes">
+                    <h3>Title</h3>
+                    <input type="text" value={newForm.title} name="title" placeholder="title" onChange={handleChange} />
+                    <h3>Image</h3>
+                    <input type="text" value={newForm.image} name="image" placeholder="image URL" onChange={handleChange} />
+                    <h3>Description</h3>
+                    <input type="text" value={newForm.description} name="description" placeholder="description" onChange={handleChange} />
+                </div>
+                <br />
+                <input type="submit" value="Create Recipe" className="post-button"/>
             </form>
-        </section>
+        </div>
     )
 };
 
