@@ -1,0 +1,92 @@
+div {
+
+    .title-box {
+        width: 90vw;
+        background-color: rgb(207, 35, 35);
+        margin: 5vh auto;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: white;
+        }
+    }
+
+    .edit-page-title-box {display: none;}
+    .edit-page-image-box {display: none;}
+    .edit-page-description-box {display: none;}
+
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        input {
+            height: 50px;
+            width: 80vw;
+            margin-bottom: 2vh;
+            border: rgb(207, 35, 35) solid 1px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 1vh;
+            color:rgb(207, 35, 35);
+        }
+
+        .post-button {
+            width: 50vw;
+            background-color: white;
+            color:rgb(207, 35, 35);
+            transition: .3s ease-in-out;
+        }
+
+        .post-button:hover {
+            background-color: rgb(207, 35, 35);
+            color: white;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2.5px solid rgb(207, 35, 35);
+        }
+    }
+
+    .delete-button {
+        width: 50vw;
+        background-color: rgb(207, 35, 35);
+        color:white;
+        transition: .3s ease-in-out;
+        height: 50px;
+        margin: 20vh 25vw;
+        border: rgb(207, 35, 35) solid 1px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    .delete-button:hover {
+        background-color: white;
+        color: rgb(207, 35, 35);
+        animation: pulse 1.3s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            background-color: rgb(207, 35, 35);
+            color: white;
+        }
+        50% {
+            background-color: white;
+            color:rgb(207, 35, 35)
+        }
+        100% {
+            background-color: rgb(207, 35, 35);
+            color: white;
+        }
+    }
+}
