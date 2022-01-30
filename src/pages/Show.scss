@@ -58,6 +58,31 @@
     }
 }
 
+.loading-box {
+    margin-top: 30vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading-animation {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        border-top: 10px solid rgb(207, 35, 35);
+        border-bottom: 10px solid rgb(207, 35, 35);
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg) }
+        100% { transform: rotate(360deg) }
+    }
+}
+
 @media (min-width: 500px) {
     .show-box{
         .inner-show-box{

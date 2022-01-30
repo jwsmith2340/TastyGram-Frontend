@@ -5,7 +5,11 @@ import './Show.scss'
 
 const Show = (props) => {
     if (!props.foods) {
-        return <h1>Loading...</h1>
+        return (
+            <div className="loading-box">
+                <div className="loading-animation"></div>
+            </div>
+        )
     } else {
         //SET UP VARIABLES
         const id = props.match.params.id;

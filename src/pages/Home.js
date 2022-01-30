@@ -22,7 +22,11 @@ const Home = (props) => {
     };
     // Loading Function
     const loading = () => {
-        return <h1>Loading...</h1>
+        return (
+            <div className="loading-box">
+                <div className="loading-animation"></div>
+            </div>
+        )
     }
     return (
         <>
