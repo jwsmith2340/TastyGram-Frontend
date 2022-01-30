@@ -54,7 +54,7 @@ const Main = (props) => {
   // DELETE FOOD
   const deleteFoods = async (id) => {
     // make delete request to delete foodById
-    await fetch(URL +id, {
+    await fetch(URL + id, {
       method: "DELETE",
     });
     // update list of food
@@ -67,7 +67,7 @@ const Main = (props) => {
     <main>
       <Switch>
         <Route exact path="/">
-          <Home foods={ foods } createFood={ createFood }/>
+          <Home foods={ foods } />
         </Route>
         <Route path="/signup">
           <SignUp />
@@ -83,7 +83,7 @@ const Main = (props) => {
             deleteFoods={ deleteFoods }
             {...rf}/>)} />
         <Route path="/newfood">
-          <New />
+          <New createFood={ createFood } />
         </Route>
       </Switch>
     </main>
