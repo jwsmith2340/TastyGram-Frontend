@@ -26,7 +26,7 @@ const New = (props) => {
         });
     };
     return (
-        <div>
+        <div className="new-box">
             <div className="title-box">
                 <h1>New Recipe Form</h1>
             </div>
