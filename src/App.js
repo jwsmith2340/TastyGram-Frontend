@@ -14,7 +14,7 @@ function App() {
 
       <Main />
       
-      <Footer />
+      <Footer className="footer-component"/>
     </div>
   );
 }
