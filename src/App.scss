@@ -5,11 +5,16 @@
 
 html,body {
     height: auto;
-    min-height: 110vh;
 }
 
 html {
     overflow-x: hidden;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
 ::-webkit-scrollbar {
