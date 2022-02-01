@@ -95,7 +95,9 @@ const Main = (props) => {
           <Route path="/newfood">
             {
             props.user ?
-            <New createFood={createFood} />
+            <New 
+              createFood={createFood}
+              user={props.user} />
             :
             <Redirect to="/" />
             }
