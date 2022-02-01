@@ -23,12 +23,14 @@ const Header = (props) => {
                         props.user ?
                         <>
                         {/* <li>Signed in as: {props.user.displayName}</li> */}
+                            <Link to="/dashboard" >
                         <li className="google-photo">
                             <img className="google-photo"
                                 src={props.user.photoURL}
                                 alt={props.user.displayName}
-                            />
+                                />
                         </li>
+                            </Link>
                         <li><h4 className="logout" onClick={logout}><BiLogOut /></h4></li>
                         <Link to="/newfood" className="link">
                             <h4><FaPlus /></h4>
