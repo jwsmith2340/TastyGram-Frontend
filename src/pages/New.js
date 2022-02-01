@@ -8,12 +8,14 @@ const New = (props) => {
         title: "",
         image: "",
         description: "",
+        key: ""
     });
 
     // HANDLECHANGE FUNCTION FOR FORM
     const handleChange = (event) => {
-        setNewForm({ ...newForm, [event.target.name]: event.target.value });
-    };
+        setNewForm({ ...newForm, [event.target.name]: event.target.value, key: props.user.uid });
+    }; //^^key: uid, this sets the key to a single user's ID, will be used
+    //in show.js to restrict user access to edit button. 
 
     //HANDLESUBMIT FUNCTION FOR FORM
     const handleSubmit = (event) => {
@@ -23,8 +25,10 @@ const New = (props) => {
             title: "",
             image: "",
             description: "",
+            key: "",
         });
     };
+
     return (
         <div className="new-box">
             <div className="title-box">
