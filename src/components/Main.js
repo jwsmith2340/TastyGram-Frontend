@@ -78,6 +78,7 @@ const Main = (props) => {
         </Route>
         <Route exact path="/food/:id" render={(rf) => 
           (<Show 
+            user={props.user}
             foods={foods}
             {...rf} />)} />
         <Route path="/food/edit/:id" render={(rf) => 
