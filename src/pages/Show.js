@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Show.scss'
 
 const Show = (props) => {
+    console.log('props', props.user.uid)
     if (!props.foods) {
         return (
             <div className="loading-box">
@@ -14,8 +15,8 @@ const Show = (props) => {
         //SET UP VARIABLES
         const id = props.match.params.id;
         const foods = props.foods;
-        console.log(foods);
         const eachFood = foods.find(f => f._id === id);
+        console.log('food key', eachFood.key);
 
 
         return (
@@ -30,7 +31,10 @@ const Show = (props) => {
                     <div className="description-box">
                         <h2>{eachFood.description}</h2>
                     </div>
-                    <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link>
+                    {
+                        (props.user.uid === eachFood.key) ? <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link> : console.log('null')
+                    }
+                    
                 </div>
             </div>
         );
