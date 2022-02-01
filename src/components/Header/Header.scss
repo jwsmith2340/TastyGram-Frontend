@@ -21,7 +21,13 @@ nav {
     }
 
     .mob-link-box-right {
+        display: flex;
         justify-content: flex-end;
+        align-items: center;
+       
+            .google-photo {
+                margin-right: 0;
+            }   
     }
 
     .link {
@@ -54,7 +60,8 @@ ul {
         font-weight: 700;
 
         img {
-            height: 2.68rem;
+            height: 2.3rem;
+            width: 2.3rem;
             border-radius: 50%;
         }
         // Feel free to change the styling up! 

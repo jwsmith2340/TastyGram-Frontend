@@ -21,13 +21,13 @@ const Header = (props) => {
                     props.user ?
                     <>
                     {/* <li>Signed in as: {props.user.displayName}</li> */}
-                    <li>
-                        <img
+                    <li className="google-photo">
+                        <img className="google-photo"
                             src={props.user.photoURL}
                             alt={props.user.displayName}
                         />
                     </li>
-                    <li><button className="log" onClick={logout}>Logout</button></li>
+                    {/* <li><button className="log" onClick={logout}>Logout</button></li> */}
                     </>
                     :
                     <li><button className="log" onClick={login}>Login</button></li>
