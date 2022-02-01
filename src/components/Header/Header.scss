@@ -42,6 +42,37 @@ nav {
     }            
 }
 
+// Login/Logout STYLING
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+        margin-right: 1.2rem;
+        cursor: pointer;
+        font-weight: 700;
+
+        img {
+            height: 2.68rem;
+            border-radius: 50%;
+        }
+        // Feel free to change the styling up! 
+        .log {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: red;
+            }
+
+
+        }
+    }
+}
+
+
 //TABLET STYLING
 @media (min-width: 650px) {
     nav {

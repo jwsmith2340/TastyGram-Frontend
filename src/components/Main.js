@@ -1,7 +1,7 @@
 // IMPORT useEFFECT/useSTATE
 import { useEffect, useState } from "react";
 // IMPORT ROUTE/SWITCH
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 // IMPORT PAGES
 import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
@@ -14,7 +14,8 @@ const Main = (props) => {
   const [ foods , setFood ] = useState(null);
 
   // IMPORT BACKEND URL
-  const URL = "https://tastygram.herokuapp.com/recipes/api/";
+  const URL = "https://tastiergram.herokuapp.com/recipes/api/";
+  
 
   // FETCH FOOD FROM BACKEND
   const getFood = async () => {
@@ -26,10 +27,13 @@ const Main = (props) => {
   // CREATE FOOD
   const createFood = async (eachFood) => {
     // make post request to create food
+    if(!props.user) return; // do not run anycode in this function if there's no user
+    const token = await props.user.getIdToken();
     await fetch(URL, {
       method: "POST",
       headers: {
         "Content-Type": "Application/JSON",
+        "Authorization": "Bearer " + token
       },
       body: JSON.stringify(eachFood),
     });
@@ -77,14 +81,25 @@ const Main = (props) => {
             foods={foods}
             {...rf} />)} />
         <Route path="/food/edit/:id" render={(rf) => 
-          (<Edit 
-            foods={foods}
-            updateFoods={ updateFoods }
-            deleteFoods={ deleteFoods }
-            {...rf}/>)} />
-        <Route path="/newfood">
-          <New createFood={ createFood } />
-        </Route>
+          (
+            props.user ?
+              <Edit
+                foods={foods}
+                updateFoods={updateFoods}
+                deleteFoods={deleteFoods}
+                {...rf} />
+              :
+              <Redirect to="/" />
+          )}
+          />
+          <Route path="/newfood">
+            {
+            props.user ?
+            <New createFood={createFood} />
+            :
+            <Redirect to="/" />
+            }
+          </Route>
       </Switch>
     </main>
   )

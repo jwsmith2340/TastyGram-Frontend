@@ -1,3 +1,4 @@
+import { login, logout } from "../../services/firebase";
 import { Link } from "react-router-dom";
 import './Header.scss'
 import { FaHome, FaPlus } from 'react-icons/fa'
@@ -15,6 +16,25 @@ const Header = (props) => {
             <h2 className="dt-logo">TastyGram</h2>
 
             <div className="mob-link-box-right mob-link-boxes">
+            <ul>
+                {
+                    props.user ?
+                    <>
+                    {/* <li>Signed in as: {props.user.displayName}</li> */}
+                    <li>
+                        <img
+                            src={props.user.photoURL}
+                            alt={props.user.displayName}
+                        />
+                    </li>
+                    <li><button className="log" onClick={logout}>Logout</button></li>
+                    </>
+                    :
+                    <li><button className="log" onClick={login}>Login</button></li>
+                }
+
+                </ul>
+
                 <Link to="/newfood" className="link">
                     <h4><FaPlus /></h4>
                 </Link>
