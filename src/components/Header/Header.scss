@@ -33,11 +33,16 @@ nav {
     .link {
         text-decoration: none;
 
+        .h4-house {
+            margin: 0 3.5vw;
+        }
+
         h4 {
             color: white;
             text-decoration: none;
-            margin: 0 3.5vw;
+            margin: 0 3.5vw 0 0;
             font-size: 30px;
+            //background-color: yellow;
         }
     }
     
@@ -53,9 +58,10 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     li {
-        margin-right: 1.2rem;
+        //margin-right: 1.2rem;
         cursor: pointer;
         font-weight: 700;
 
@@ -64,18 +70,31 @@ ul {
             width: 2.3rem;
             border-radius: 50%;
         }
-        // Feel free to change the styling up! 
+
         .log {
-            color: black;
-            background-color: white;
-            cursor: pointer;
-
-            &:hover {
-                background-color: red;
-            }
-
-
+            color: white;
+            font-size: 27px;
+            margin: 0 3.5vw;
         }
+
+        .logout {
+            color: white;
+            font-size: 35px;
+            //background-color: green;
+            margin: 0 2vw 0 1vw;
+        }
+        // Feel free to change the styling up! 
+        // .log {
+        //     color: black;
+        //     background-color: white;
+        //     cursor: pointer;
+
+        //     &:hover {
+        //         background-color: red;
+        //     }
+
+
+        // }
     }
 }
 

@@ -31,10 +31,14 @@ const Show = (props) => {
                         <h2>{eachFood.description}</h2>
                     </div>
                     {
-                        (props.user.uid === eachFood.key) && <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link>
+                        props.user ? 
+                        ( (props.user.uid === eachFood.key) && <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link>) :
+                        console.log('null')
                     }
                     {/* props.user.uid matches the eachFood.key only when the logged in user is the
-                    one who created the item via a short circuit */}
+                    one who created the item via a short circuit. This is inside a ternary to check
+                    for a user, because if no user, the page will not render since there is no uid
+                    to check against.  */}
                 </div>
             </div>
         );
