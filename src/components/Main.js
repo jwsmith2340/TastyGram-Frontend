@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import Show from "../pages/Show";
 import Edit from "../pages/Edit";
 import New from "../pages/New";
+import Dashboard from "../pages/Dashboard"
 
 const Main = (props) => {
   // SET useSTATE
@@ -103,6 +104,14 @@ const Main = (props) => {
             <Redirect to="/" />
             }
           </Route>
+
+          <Route path="/dashboard">
+            <Dashboard 
+              user={props.user}
+              foods={foods}
+            />
+          </Route>
+
       </Switch>
     </main>
   )
