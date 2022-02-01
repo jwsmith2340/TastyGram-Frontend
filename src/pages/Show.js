@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './Show.scss'
 
 const Show = (props) => {
-    console.log('props', props.user.uid)
     if (!props.foods) {
         return (
             <div className="loading-box">
@@ -16,7 +15,7 @@ const Show = (props) => {
         const id = props.match.params.id;
         const foods = props.foods;
         const eachFood = foods.find(f => f._id === id);
-        console.log('food key', eachFood.key);
+        //console.log('food key', eachFood.key);
 
 
         return (
@@ -32,9 +31,10 @@ const Show = (props) => {
                         <h2>{eachFood.description}</h2>
                     </div>
                     {
-                        (props.user.uid === eachFood.key) ? <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link> : console.log('null')
+                        (props.user.uid === eachFood.key) && <Link to={`/food/edit/${eachFood._id}`}><button>EDIT</button></Link>
                     }
-                    
+                    {/* props.user.uid matches the eachFood.key only when the logged in user is the
+                    one who created the item via a short circuit */}
                 </div>
             </div>
         );
