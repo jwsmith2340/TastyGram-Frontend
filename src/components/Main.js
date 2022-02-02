@@ -95,16 +95,18 @@ const Main = (props) => {
               <Redirect to="/" />
           )}
           />
-          <Route path="/newfood">
-            {
+          <Route path="/newfood" render={(rf) => 
+            (
             props.user ?
             <New 
               createFood={createFood}
-              user={props.user} />
+              user={props.user} 
+              {...rf} />
             :
             <Redirect to="/" />
-            }
-          </Route>
+            
+            )}
+          />
 
           <Route path="/dashboard">
             <DashboardHeader user={props.user}/>
