@@ -66,7 +66,8 @@ body {
             margin: 10px 10% 0;
             text-align: center;
             h3 {
-                
+                color: #455A64;
+                font-size: 25px;
             }
         }
     }
@@ -76,6 +77,11 @@ body {
         color: white;
         .link-element {
             color: white;
+        }
+        .mob-title {
+            h3 {
+                color: white;
+            }
         }
     }
 }
@@ -95,6 +101,13 @@ body {
 @media (min-width: 650px) {
     .home-box {
         width: 47vw;
+        .home-inner-box {
+            .mob-title {
+                h3 {
+                    font-size: 26px;
+                }
+            }
+        }
     }
 }
 
@@ -113,16 +126,9 @@ body {
 
 
 @media (min-width: 1050px) {
-
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .home-box {
         width: 35vw;
-        height: 50vh;
-        flex-direction: row;
-        flex-wrap: wrap;
+        height: 50vh;   
     }
 }
 
@@ -130,5 +136,6 @@ body {
     .home-box {
         width: 32vw;
         height: 50vh;
+        max-width: 420px;
     }
 }
