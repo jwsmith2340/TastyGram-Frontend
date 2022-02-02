@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# TastyGram
+### A New Take on Recipe Websites
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+TastyGram is a scrolling focused site, similar to Instagram and other popular social media platforms, that focuses on recipes. The site was built using **React, Sass, Express, MongoDB, and Node.js**.
 
-## Available Scripts
+The app has full **CRUD** functionality for users that are logged in. A logged-in user may add new posts and edit or delete their own posts. Any visitor to the site can view posts in the main feed and in a show page, but they do not have authorization to make any changes to the posts. Authentication / authorization is achieved with **Google Firebase**. 
 
-In the project directory, you can run:
+The frontend site consists of several page components, including main feed, create, edit / delete, dashboard, and about the developers sections. 
 
-### `npm start`
+On the backend, the app communicates with a **MongoDB** database to perform CRUD functions on the individual documents via Post, Put, and Delete routing. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app was built out using a mobile-first strategy to ensure that it looks great on any device. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### Technologies Used
+- React
+- Sass
+- MongoDB
+- Express
+- Node.js
+- Javascript
+- Mongoose
+- Postman
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Landing Page - Desktop**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![Screen-Shot-2022-01-12-at-11-17-58-PM.png](https://i.postimg.cc/fRdS95nD/Screen-Shot-2022-01-12-at-11-17-58-PM.png)](https://postimg.cc/k2n5rQgp)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+**Show Page - Desktop**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[![Screen-Shot-2022-01-12-at-11-20-07-PM.png](https://i.postimg.cc/sxtDfd2S/Screen-Shot-2022-01-12-at-11-20-07-PM.png)](https://postimg.cc/q6xdQFyM)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Shopping Cart - Mobile**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![guitar-shop-2340-herokuapp-com-users-cart-i-Phone-X.png](https://i.postimg.cc/WzrtkbCS/guitar-shop-2340-herokuapp-com-users-cart-i-Phone-X.png)](https://postimg.cc/QK8XLsXW)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Guitar Category - Mobile**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![guitar-shop-2340-herokuapp-com-product-category-guitar-i-Phone-X-1.png](https://i.postimg.cc/8C55bbx7/guitar-shop-2340-herokuapp-com-product-category-guitar-i-Phone-X-1.png)](https://postimg.cc/fVGDzYzs)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Getting Started
+The majority of the page can be visited without logging in. However, due to some of the routing, you will need to sign in to see all of the features of the page. 
 
-### Analyzing the Bundle Size
+You do **not** need to enter your email address if you do not want to. You can do one of two things if you choose not to enter your email: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. You can use *email*: test@test.com and *password*: 1234
+    If you choose to use this email, please be aware there may already be items in the cart.
+2.  You may make up an email, since there is no validation requirement to enter the site. 
 
-### Making a Progressive Web App
+To see the deployed site, please visit: **https://guitar-shop-2340.herokuapp.com/**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### Future Improvements
+Bind admin rights to certain profiles and populate the nav bar with direct routes to the 'new products' and 'edit products' pages of the site when those admin profiles are signed in.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Change the home icon to a hamburger icon that populates a full-page menu over the current page on mobile and drop-down menus on the desktop version of the site.
