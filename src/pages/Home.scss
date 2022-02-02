@@ -67,7 +67,7 @@ body {
             text-align: center;
             h3 {
                 color: #455A64;
-                font-size: 25px;
+                font-size: 16px;
             }
         }
     }
@@ -85,6 +85,7 @@ body {
         }
     }
 }
+
 
 @media (min-width: 420px) {
     .home-box {
@@ -104,7 +105,7 @@ body {
         .home-inner-box {
             .mob-title {
                 h3 {
-                    font-size: 26px;
+                    font-size: 20px;
                 }
             }
         }
@@ -137,5 +138,41 @@ body {
         width: 32vw;
         height: 50vh;
         max-width: 420px;
+    }
+}
+
+@media (min-height: 650px) {
+    .home-box {
+        .home-inner-box {
+            .mob-title {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 770px) {
+    .home-box {
+        .home-inner-box {
+            .mob-title {
+                h3 {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 850px) {
+    .home-box {
+        .home-inner-box {
+            .mob-title {
+                h3 {
+                    font-size: 25px;
+                }
+            }
+        }
     }
 }
