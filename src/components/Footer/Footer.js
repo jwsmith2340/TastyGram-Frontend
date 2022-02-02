@@ -11,7 +11,7 @@ const Footer = (props) => {
             <div className="footer-box">
 
                 <div className="dt-about-box">
-                    <h4><BiRun /></h4>
+                    <a href="/about"><h4><BiRun /></h4></a>
                 </div>
 
                 <div className="mob-name-box">
