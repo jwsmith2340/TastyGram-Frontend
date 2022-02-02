@@ -29,15 +29,15 @@ The app was built out using a mobile-first strategy to ensure that it looks grea
 
 ### Screenshots
 
-**Landing Page - Desktop**
+**Landing Page - Mobile**
 
-[![Screen-Shot-2022-01-12-at-11-17-58-PM.png](https://i.postimg.cc/fRdS95nD/Screen-Shot-2022-01-12-at-11-17-58-PM.png)](https://postimg.cc/k2n5rQgp)
+![TastyGram-Mobile-Home-Page](TastyGramMobHome.png)
 
 ---
 
-**Show Page - Desktop**
+**Show Page - Mobile**
 
-[![Screen-Shot-2022-01-12-at-11-20-07-PM.png](https://i.postimg.cc/sxtDfd2S/Screen-Shot-2022-01-12-at-11-20-07-PM.png)](https://postimg.cc/q6xdQFyM)
+![TastyGram-Mobile-Show-Page](TastyGramMobTurkey.png)
 
 ---
 
