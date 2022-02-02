@@ -41,32 +41,32 @@ The app was built out using a mobile-first strategy to ensure that it looks grea
 
 ---
 
-**Shopping Cart - Mobile**
+**Dashboard - Desktop**
 
-[![guitar-shop-2340-herokuapp-com-users-cart-i-Phone-X.png](https://i.postimg.cc/WzrtkbCS/guitar-shop-2340-herokuapp-com-users-cart-i-Phone-X.png)](https://postimg.cc/QK8XLsXW)
+![TastyGram-Mobile-Show-Page](TastyGramDtDashboard.png)
 
 ---
 
-**Guitar Category - Mobile**
+**Create Page - Desktop**
 
-[![guitar-shop-2340-herokuapp-com-product-category-guitar-i-Phone-X-1.png](https://i.postimg.cc/8C55bbx7/guitar-shop-2340-herokuapp-com-product-category-guitar-i-Phone-X-1.png)](https://postimg.cc/fVGDzYzs)
+![TastyGram-Mobile-Show-Page](TastyGramDtCreate.png)
 
 ---
 
 ### Getting Started
-The majority of the page can be visited without logging in. However, due to some of the routing, you will need to sign in to see all of the features of the page. 
+This entire application can be viewed without logging in, save the personalized dashboard, edit, and create buttons. These are hidden from non-authenticated users to prevent anonymous creation of posts.
 
-You do **not** need to enter your email address if you do not want to. You can do one of two things if you choose not to enter your email: 
+**To login**, click on the person in the top right corner of the page. This will allow you to login with your Google account. 
 
-1. You can use *email*: test@test.com and *password*: 1234
-    If you choose to use this email, please be aware there may already be items in the cart.
-2.  You may make up an email, since there is no validation requirement to enter the site. 
+Once you are logged in, you can **create a new post**. That new post will then appear in your dashboard. The **dashboard** is accessed by clicking on your google image, which automatically populates once you are logged in. 
 
-To see the deployed site, please visit: **https://guitar-shop-2340.herokuapp.com/**
+Now, when you click on one of your posts, you'll see the **edit** button. You will not see this button on any posts that you did not create. By clicking the edit button, you'll be taken to the edit page where you also have an option to **delete** your post. 
+
+**To logout**, you access your dashboard and click the logout button. This will log you out immediately and redirect you to the home page. 
+
+To see the deployed site, please visit: NOT YET DEPLOYED
 
 ---
 
 ### Future Improvements
-Bind admin rights to certain profiles and populate the nav bar with direct routes to the 'new products' and 'edit products' pages of the site when those admin profiles are signed in.
-
-Change the home icon to a hamburger icon that populates a full-page menu over the current page on mobile and drop-down menus on the desktop version of the site.
+In the future, we will be adding a comment chain to posts, so users can tell the poster what they enjoyed about the recipes. Additionally, we will also be creating a like button on each post so users can have a metric of the quality of their content.
