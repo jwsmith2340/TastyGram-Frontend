@@ -27,6 +27,7 @@ const New = (props) => {
             description: "",
             key: "",
         });
+        props.history.push("/")
     };
 
     return (
