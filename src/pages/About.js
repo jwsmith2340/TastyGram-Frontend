@@ -23,7 +23,8 @@ const About = (props) => {
                 <h3>Back End Developer</h3>
                 <img src="" alt="Micah" />
                 <h4>Hey, I'm the Backend dev for "TG" :)
-                MongoDB, Express and Node were utilized for this project.</h4>
+                MongoDB, Express and Node were utilized for this project.
+                I learned alot working with this team and im excited to continue to grow!</h4>
             </div>
         </div>
     )
