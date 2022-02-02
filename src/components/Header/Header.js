@@ -31,7 +31,7 @@ const Header = (props) => {
                                 />
                         </li>
                             </Link>
-                        <li><h4 className="logout" onClick={logout}><BiLogOut /></h4></li>
+                        
                         <Link to="/newfood" className="link">
                             <h4><FaPlus /></h4>
                         </Link>

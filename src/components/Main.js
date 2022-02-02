@@ -9,6 +9,7 @@ import Show from "../pages/Show";
 import Edit from "../pages/Edit";
 import New from "../pages/New";
 import Dashboard from "../pages/Dashboard"
+import DashboardHeader from "./DashboardHeader/DashboardHeader";
 
 const Main = (props) => {
   // SET useSTATE
@@ -106,6 +107,7 @@ const Main = (props) => {
           </Route>
 
           <Route path="/dashboard">
+            <DashboardHeader user={props.user}/>
             <Dashboard 
               user={props.user}
               foods={foods}

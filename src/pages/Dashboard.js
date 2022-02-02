@@ -4,7 +4,7 @@ import './Home.scss'
 
 const Dashboard = (props) => {
     // Loaded Function
-    console.log('food props', props.foods[4].key)
+    //console.log('food props', props.foods[4].key)
     //console.log(props)
     const loaded = () => {
         return props.foods.map((eachFood) => (
