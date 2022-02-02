@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // IMPORT ROUTE/SWITCH
 import { Route, Switch, Redirect } from "react-router-dom";
 // IMPORT PAGES
-import SignUp from "../pages/SignUp";
+import About from "../pages/About";
 import Home from "../pages/Home";
 import Show from "../pages/Show";
 import Edit from "../pages/Edit";
@@ -75,8 +75,8 @@ const Main = (props) => {
         <Route exact path="/">
           <Home foods={ foods } />
         </Route>
-        <Route path="/signup">
-          <SignUp />
+        <Route path="/about">
+          <About />
         </Route>
         <Route exact path="/food/:id" render={(rf) => 
           (<Show 
