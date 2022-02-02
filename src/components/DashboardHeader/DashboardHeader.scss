@@ -20,6 +20,10 @@
         align-items: center;
         justify-content: center;
 
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
     }
 
     .dh-link {
@@ -43,6 +47,11 @@
     .dash-header-box {
         .logout-box {
             font-size: 40px;
+        }
+        .name-box {
+            h2 {
+                font-size: 30px;
+            }
         }
     }
 }
