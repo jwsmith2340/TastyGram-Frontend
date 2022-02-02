@@ -1,9 +1,8 @@
-import { login, logout } from "../../services/firebase";
+import { login } from "../../services/firebase";
 import { Link } from "react-router-dom";
 import './Header.scss'
 import { FaHome, FaPlus } from 'react-icons/fa'
 import { GoPerson } from 'react-icons/go'
-import { BiLogOut } from 'react-icons/bi'
 
 const Header = (props) => {
     return (
