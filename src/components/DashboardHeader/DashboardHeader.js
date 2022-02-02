@@ -9,7 +9,7 @@ function DashboardHeader(props) {
         props.user ?
         <div className="dash-header-box">
             <div className="space-box"></div>
-            <div className="name-box"><h2>{props.user.displayName}</h2></div>
+            <div className="name-box"><h2>{props.user.displayName}'s Posts</h2></div>
             <div className="logout-box">
                 <Link to="/" className="dh-link">
                 <   h4 className="logout" onClick={logout}><BiLogOut /></h4>
