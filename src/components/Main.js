@@ -75,7 +75,7 @@ const Main = (props) => {
         <Route exact path="/">
           <Home foods={ foods } />
         </Route>
-        <Route path="/about">
+        <Route exact path="/about">
           <About />
         </Route>
         <Route exact path="/food/:id" render={(rf) => 
