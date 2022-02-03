@@ -27,9 +27,11 @@ const About = (props) => {
             <div className="micahAbout">
                 <h1>Micah Stewart</h1>
                 <h3>Back End Developer</h3>
-                <img src="" alt="Micah" />
+                <img src="https://i.imgur.com/iEHkoMW.jpg?2" alt="Micah" />
                 <h4>Hey, I'm the Backend dev for "TG" :)
-                MongoDB, Express and Node were utilized for this project.</h4>
+                MongoDB, Express and Node were utilized for this project.
+                I learned alot working with this team and im excited to continue to grow!</h4>
+                <h4>Email: micahlouis99@gmail.com</h4>
             </div>
         </div>
     )
