@@ -3,7 +3,7 @@ import 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC9L-CPgRG4kGsoHf4L0Ggc9bFkyklH7Dg",
-    authDomain: "auth-dev-b65fe.firebaseapp.com",
+    authDomain: "https://tastygram.netlify.app",
     projectId: "auth-dev-b65fe",
     storageBucket: "auth-dev-b65fe.appspot.com",
     messagingSenderId: "778738552353",
