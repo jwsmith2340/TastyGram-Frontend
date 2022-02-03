@@ -54,11 +54,15 @@ footer {
                 justify-content: flex-start;
                 margin-left: 0 4vw;
                 width: 15vw;
+                
+                a {
+                    text-decoration: none;
 
-                h4 {
-                    margin: 0 4vw;
-                    font-size: 30px;
-                    color: white;
+                    h4 {
+                        margin: 0 4vw;
+                        font-size: 23px;
+                        color: white;                        
+                    }
                 }
             }
 
@@ -86,7 +90,6 @@ footer {
         .footer-box {
             .dt-about-box {
                 h4 {
-                    font-size: 37px;
                 }
             }
             .mob-name-box {
