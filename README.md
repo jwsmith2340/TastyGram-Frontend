@@ -64,7 +64,7 @@ Now, when you click on one of your posts, you'll see the **edit** button. You wi
 
 **To logout**, you access your dashboard and click the logout button. This will log you out immediately and redirect you to the home page. 
 
-To see the deployed site, please visit: NOT YET DEPLOYED
+To see the deployed site, please visit: https://tastygram.netlify.app/
 
 ---
 
