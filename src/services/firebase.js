@@ -2,12 +2,12 @@ import firebase from "firebase/app";
 import 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC9L-CPgRG4kGsoHf4L0Ggc9bFkyklH7Dg",
-    authDomain: "auth-dev-b65fe.firebaseapp.com",
-    projectId: "auth-dev-b65fe",
-    storageBucket: "auth-dev-b65fe.appspot.com",
-    messagingSenderId: "778738552353",
-    appId: "1:778738552353:web:d0d2ff7f9cf374ea341d60"
+    apiKey: "AIzaSyDzDILvM8h-Y7bb4aREEkS9l7X_zUu6DYM",
+    authDomain: "tastygram-66c02.firebaseapp.com",
+    projectId: "tastygram-66c02",
+    storageBucket: "tastygram-66c02.appspot.com",
+    messagingSenderId: "678445359188",
+    appId: "1:678445359188:web:c21af5b792b5a1dfc50dc1"
   };
   
 

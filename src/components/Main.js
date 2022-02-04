@@ -16,7 +16,7 @@ const Main = (props) => {
   const [ foods , setFood ] = useState(null);
 
   // IMPORT BACKEND URL
-  const URL = "https://tastiergram.herokuapp.com/recipes/api/";
+  const URL = "https://tasty-gram-api.herokuapp.com/recipes/api/";
   
 
   // FETCH FOOD FROM BACKEND
